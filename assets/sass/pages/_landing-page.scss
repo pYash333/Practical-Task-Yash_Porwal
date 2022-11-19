@@ -1,0 +1,430 @@
+.header-hero-wrapper {
+    @include gradient(122.51deg, $blue-color 3.32%, $darkBlue-color 96.59%);
+  }
+  
+  
+  // Hero section css
+  .hero-section {
+    padding-bottom: 24rem;
+    @include section-hspacing;
+    .hero-heading {
+      font-size: 5.4rem;
+      font-weight: 700;
+      color: $white-color;
+      @include screen-sm {
+        font-size: 3.4rem;
+      }
+      span {
+        color: $lightskyBlue-color;
+      }
+    }
+    .hero-text {
+      color: rgba($color: $white-color, $alpha: 0.44);
+      font-size: 2rem;
+      font-family: $secondaryFont;
+      line-height: 3.4rem;
+      margin-top: 2.6rem;
+      max-width: 80rem;
+      @include screen-sm {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+      }
+    }
+    .hero-card-col {
+      background: url(../images/Rectangle_bg.png) no-repeat center center;
+      padding: 2rem 0 3rem 0;
+      .hero-card-wrapper {
+        &:not(:last-child) {
+          margin-bottom: 4.3rem;
+        }
+        .hero-card-left {
+          background-color: $lightskyBlue-color;
+          width: 7.3rem;
+        }
+        .hero-card-right {
+          background-color: $white-color;
+          padding: 1.5rem 0 1.5rem 1.5rem;
+          width: 14.3rem;
+          .card-top-text {
+            font-weight: 700;
+            font-size: 2.8rem;
+            color: $black-color;
+          }
+          .card-bottom-text {
+            font-size: 1.05rem;
+            color: rgba($color: $black-color, $alpha: 0.44);
+          }
+        }
+      }
+    }
+  }
+  .hero-banner {
+    @include section-hspacing;
+    margin-top: -17rem;
+    position: relative;
+    .half-rectanlge-img {
+      position: absolute;
+      left: -2rem;
+      top: -2rem;
+      @include screen-sm {
+        width: 4rem;
+        top: -1rem;
+        left: -1rem;
+      }
+    }
+    .half-circle-shape-img {
+      position: absolute;
+      right: 0rem;
+      bottom: -4rem;
+      @include screen-sm {
+        width: 5rem;
+        bottom: -1rem;
+      }
+    }
+  }
+  // Business Growth section 
+  .growth-section{
+    @include section-hspacing;
+    @include section-vspacing;
+    .sections-heading{
+      @include heading($black-color);
+      max-width: 90%;
+    }
+    .section-desc{
+      @include heading-subText;
+    }
+    .growth-cards{
+      margin-top: -4rem;
+      @include screen-lg{
+        margin-top: 2rem;
+      }
+      .nav-item{
+        border-bottom: 1px solid rgba($color: $lightBlue-color, $alpha: .2);
+        .nav-link{
+          color: $grayText-color;
+          font-size: 2rem;
+          position: relative;
+          @include screen-sm{
+            font-size: 1.4rem;
+          }
+          &.active{
+            color: $black-color;
+            font-weight: 600;
+            border: 1px solid;
+            @include border-img;
+            border-image-width:20px 0 20px 0;
+            padding: 0 2.5rem;
+            &::before{
+              content: "";
+              width: 1.7rem;
+              height: 100%;
+              background-color: #00baba;
+              position: absolute;
+              top: 0;
+              right: 0;            
+            }
+            &::after{
+              content: "";
+              width: 1.7rem;
+              height: 100%;
+              background-color: #00baba;
+              position: absolute;
+              top: 0;
+              left: 0;           
+            }
+          }
+        }
+      }
+      .tab-content{
+        margin-top: 3rem;
+      }
+      .card{
+        border: 1px solid rgba($color: $lightBlue-color, $alpha: .2);
+        &:hover{
+          @include  border-img;
+          .icon-wrapper{
+            background-color: rgba($color: $lightskyBlue-color, $alpha: 1) !important;
+          }
+          .card-text-wrapper{
+            @include  border-img;
+            border-image-width:20px 0px 20px 0px;
+          }
+          .card-title{
+            font-weight: 700;
+          }
+          .learn-moreLink{
+            color: $white-color;
+            font-weight: 600;
+            text-decoration: underline;
+            background-color: $blue-color;
+            &::before{
+              content: '';
+              width: 3.2rem;
+              height: 100%;
+              background-color: $lightskyBlue-color;
+              position: absolute;
+              top:0;
+              right: 0;
+            }
+          }
+        }
+        .card-body{
+          .icon-wrapper{
+            width: 5.5rem;
+            height: 5.5rem;
+            background-color: rgba($color: $lightskyBlue-color, $alpha: 0.2);
+            margin: 1.6rem;
+          }
+          .card-text-wrapper{
+            border-top: 1px solid rgba($color: $lightBlue-color, $alpha: .2);
+            border-bottom: 1px solid rgba($color: $lightBlue-color, $alpha: .2);
+            padding: 1.6rem;
+            min-height: 35rem;
+            .card-title{
+              padding-top: 1.6rem;
+              font-size: 2rem;
+              line-height: 3rem;
+            }
+            .card-text{
+              font-size: 1.8rem;
+              color: $gray-color;
+            }
+          }
+        }
+        .learn-moreLink{
+          font-size: 1.8rem;
+          color: $gray-color;
+          text-decoration: none;
+          padding: 1.6rem;
+          position: relative;
+        }
+      }
+    }
+  }
+  // Bussiness Solution
+  .bSolution-section {
+    @include section-hspacing;
+    @include section-vspacing;
+    .sections-heading {
+      @include heading($black-color);
+    }
+    .bSoultion-cards {
+      .card {
+        &:hover {
+          .card-title {
+            color: $white-color;
+            @include border-img;
+            background-color: $blue-color;
+          }
+          .card-body {
+            @include border-img;
+          }
+        }
+        .card-title {
+          font-size: 2.4rem;
+          font-weight: 600;
+          color: $black-color;
+          padding: 1.8rem;
+          line-height: 3.3rem;
+          min-height: 10.5rem;
+          border: 1px solid rgba($color: $border-color, $alpha: 0.2);
+        }
+        .card-body {
+          border: 1px solid rgba($color: $border-color, $alpha: 0.2);
+          .card-text {
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            color: $black-color;
+            @include screen-sm{
+              font-size: 1.4rem;
+              line-height: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Testimonial section css
+  .testimonial-section {
+    position: relative;
+    @include gradient(122.51deg, $blue-color 3.32%, $darkBlue-color 96.59%);
+    .testimonial-cards {
+      @include section-vspacing;
+      @include section-hspacing;
+      .sections-heading {
+        @include heading($white-color);
+      }
+      .testimonial-slider {
+        .item {
+          padding: 12rem 0.2rem 0 0.2rem;
+          .testimonial-card {
+            padding: 6rem 2.4rem;
+            background-color: $blue-color2;
+            @include border-img;
+            border-image-source:url("../images/testimonial-border.png");
+            position: relative;
+            @include screen-sm{
+              padding: 3rem 2.4rem;
+            }
+            .testimonial-img {
+              width: 11.2rem;
+              position: absolute;
+              top: -5.5rem;
+              z-index: 2;
+              @include screen-sm{
+                width: 6.5rem;
+              }
+            }
+            .img-bg {
+              width: 11.2rem;
+              height: 10rem;
+              position: absolute;
+              top: -4rem;
+              left: 3.5rem;
+              z-index: 1;
+              background-color: $lightskyBlue-color;
+              @include screen-sm{
+                width: 6.5rem;
+                height: 5.5rem;
+              }
+            }
+            .testimonail-text {
+              margin-top: 2rem;
+              color: $white-color;
+              font-weight: 500;
+              font-size: 2rem;
+              line-height: 3rem;
+              @include screen-sm{
+                font-size: 1.6rem;
+              }
+            }
+          }
+          .testimonial-bottom {
+            color: $white-color;
+            font-size: 1.8rem;
+            @include screen-sm{
+              font-size: 1.4rem;
+            }
+            .testimonial-bottom-text {
+              padding: 2.2rem;
+              @include border-img;
+              border-image-source:url("../images/testimonial-border.png");
+              border-image-width:0 20px 20px 20px;
+            }
+          }
+        }
+      }
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%);
+        @include gradient(
+          122.51deg,
+          rgba(#ffe9c8, 0.2) 3.32%,
+          rgba(#ffe9c8, 0.2) 96.59%
+        );
+        width: 4rem;
+        height: 4rem;
+        left: -5rem;
+        @include screen-lg {
+          left: auto;
+          top: 10%;
+          right: 10rem;
+        }
+      }
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%);
+        @include gradient(
+          122.51deg,
+          rgba(#ffe9c8, 0.2) 3.32%,
+          rgba(#ffe9c8, 0.2) 96.59%
+        );
+        width: 4rem;
+        height: 4rem;
+        right: -10rem;
+        @include screen-lg {
+          top: 10%;
+          right: 5rem;
+        }
+      }
+    }
+    .half-rectanlge-img {
+      position: absolute;
+      left: 12rem;
+      top: -2rem;
+      @include screen-sm {
+        width: 4rem;
+        top: -1rem;
+        right: 5rem;
+      }
+    }
+    .half-circle-shape-img {
+      position: absolute;
+      right: 12rem;
+      bottom: -4rem;
+      @include screen-sm {
+        width: 5rem;
+        bottom: -1.5rem;
+      }
+    }
+  }
+  
+  // Faq section css
+  .faq-section {
+    @include section-hspacing;
+    @include section-vspacing;
+    padding-top: 16rem;
+    @include screen-md{
+      padding-top: 8rem;
+    }
+    .sections-heading {
+      @include heading($blue-color);
+    }
+    .section-desc {
+      @include heading-subText;
+    }
+    .faq-accordion {
+      margin-top: 5rem;
+      .accordion-item {
+        border: 1px solid rgba($color: $border-color, $alpha: 0.2);
+        .accordion-header {
+          .accordion-button {
+            font-size: 2.2rem;
+            color: $grayText-color;
+            padding: 2.4rem 4.5rem 2.4rem 4.5rem;
+            position: relative;
+            box-shadow: none;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              width: 2.2rem;
+              height: 2.2rem;
+              background-color: rgba($color: $blue-color2, $alpha: 0.2);
+            }
+            &:not(.collapsed){
+              color: $blue-color2;
+              background-color: transparent;
+              box-shadow: none;
+              &::before {
+                  background-color: rgba($color: $blue-color2, $alpha: 1);
+              }
+            }
+            &::after{
+              display: none;
+            }
+          }
+        }
+        .accordion-body {
+          padding: 2.4rem 4.5rem 2.4rem 4.5rem;
+          .accordion-text {
+            font-size: 1.8rem;
+            color: $grayText-color;
+          }
+        }
+      }
+    }
+  }

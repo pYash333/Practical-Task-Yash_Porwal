@@ -1,0 +1,37 @@
+// Footer section
+footer{
+    @include gradient(122.51deg, $blue-color 3.32%, $darkBlue-color 96.59%);
+    padding-top: 4.8rem;
+    .footer-content{
+      @include section-hspacing;
+      .footer-top{
+        .footer-col-title{
+          color: $white-color;
+          font-weight: 600;
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+        }
+        .footer-col-link{
+          color: $grayText-color;
+          font-size: 1.6rem;
+          &:not(:last-child){
+            margin-bottom: 1.2rem;
+          }
+        }
+      }
+      .divider{
+        height: 2px;
+        background-color: $white-color;
+        border-radius: 4rem;
+        margin: 5rem 0 2rem 0;
+      }
+      .footer-bottom{
+        padding-bottom: 2.7rem;
+        color: $grayText-color;
+        font-size: 1.3rem;
+        .footer-col-link{
+          color: $grayText-color;
+        }
+      }
+    }
+  }

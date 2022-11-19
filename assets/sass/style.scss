@@ -1,6 +1,12 @@
 @import 'base/mixins';
 @import 'base/mediaQueries';
-@import 'base/_base.scss';
+@import 'base/base';
 
 
 //Common
+@import 'common/header';
+@import 'common/footer';
+
+
+// page
+@import 'pages/landing-page';

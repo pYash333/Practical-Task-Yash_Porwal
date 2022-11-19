@@ -1,0 +1,32 @@
+// Header css
+header {
+    @include section-hspacing;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    .navbar {
+      .navbar-nav {
+        .nav-item {
+          &:not(:last-child) {
+            margin-right: 7.8rem;
+          }
+          .nav-link {
+            font-size: 1.8rem;
+            color: $gray-color;
+            &.active {
+              color: $white-color;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .extend-teamBtn {
+        background-color: $lightskyBlue-color;
+        padding: 1.2rem 2.5rem;
+        font-size: 1.6rem;
+        @include screen-sm {
+          font-size: 1.4rem;
+          padding: 0.6rem 1.2rem;
+        }
+      }
+    }
+  }
