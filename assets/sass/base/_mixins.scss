@@ -1,0 +1,48 @@
+@mixin section-hspacing {
+  margin-left: 16rem;
+  margin-right: 16rem;
+  @include screen-xl {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  @include screen-md {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@mixin section-vspacing {
+    padding: 9rem 0;
+}
+
+@mixin heading($color) {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.6rem;
+    color: $color;
+    span{
+      color: $lightskyBlue-color;
+    }
+    @include screen-md{
+        font-size: 3rem;
+        line-height: 4.0rem;
+    }
+}
+@mixin heading-subText {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: $grayText-color;
+    
+}
+@mixin gradient($deg,$clr1,$clr2){
+    background: linear-gradient(122.51deg,$clr1,$clr2) !important;
+}
+
+@mixin border-img {
+    border-image-slice:27 27 27 27;
+    border-image-width:20px 20px 20px 20px;
+    border-image-outset:0px 0px 0px 0px;
+    border-image-repeat:repeat;
+    border-image-source:url("../images/dashed-border.png");
+    border-style:solid;
+}
+
