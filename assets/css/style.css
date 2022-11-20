@@ -17,10 +17,6 @@ html {
   box-sizing: border-box;
 }
 
-.header-hero-wrapper {
-  background: linear-gradient(122.51deg, #060f66 3.32%, #020628 96.59%) !important;
-}
-
 header {
   margin-left: 16rem;
   margin-right: 16rem;
@@ -60,6 +56,58 @@ header .navbar .extend-teamBtn {
     font-size: 1.4rem;
     padding: 0.6rem 1.2rem;
   }
+}
+
+footer {
+  background: linear-gradient(122.51deg, #060f66 3.32%, #020628 96.59%) !important;
+  padding-top: 4.8rem;
+}
+footer .footer-content {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+@media only screen and (max-width: 1199.98px) {
+  footer .footer-content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  footer .footer-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+footer .footer-content .footer-top .footer-col-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+footer .footer-content .footer-top .footer-col-link {
+  color: #808188;
+  font-size: 1.6rem;
+}
+footer .footer-content .footer-top .footer-col-link:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+footer .footer-content .divider {
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 4rem;
+  margin: 5rem 0 2rem 0;
+}
+footer .footer-content .footer-bottom {
+  padding-bottom: 2.7rem;
+  color: #808188;
+  font-size: 1.3rem;
+}
+footer .footer-content .footer-bottom .footer-col-link {
+  color: #808188;
+}
+
+.header-hero-wrapper {
+  background: linear-gradient(122.51deg, #060f66 3.32%, #020628 96.59%) !important;
 }
 
 .hero-section {
@@ -660,63 +708,5 @@ header .navbar .extend-teamBtn {
 }
 .faq-section .faq-accordion .accordion-item .accordion-body .accordion-text {
   font-size: 1.8rem;
-  color: #808188;
-}
-
-.marquee-wrapper {
-  padding: 2.8rem;
-  background: linear-gradient(122.51deg, #060f66 3.32%, #020628 96.59%) !important;
-}
-.marquee-wrapper marquee {
-  color: #ffffff;
-  font-size: 3.2rem;
-  line-height: 3.84rem;
-}
-
-footer {
-  background: linear-gradient(122.51deg, #060f66 3.32%, #020628 96.59%) !important;
-  padding-top: 4.8rem;
-}
-footer .footer-content {
-  margin-left: 16rem;
-  margin-right: 16rem;
-}
-@media only screen and (max-width: 1199.98px) {
-  footer .footer-content {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-}
-@media only screen and (max-width: 767.98px) {
-  footer .footer-content {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-footer .footer-content .footer-top .footer-col-title {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-}
-footer .footer-content .footer-top .footer-col-link {
-  color: #808188;
-  font-size: 1.6rem;
-}
-footer .footer-content .footer-top .footer-col-link:not(:last-child) {
-  margin-bottom: 1.2rem;
-}
-footer .footer-content .divider {
-  height: 2px;
-  background-color: #ffffff;
-  border-radius: 4rem;
-  margin: 5rem 0 2rem 0;
-}
-footer .footer-content .footer-bottom {
-  padding-bottom: 2.7rem;
-  color: #808188;
-  font-size: 1.3rem;
-}
-footer .footer-content .footer-bottom .footer-col-link {
   color: #808188;
 }/*# sourceMappingURL=style.css.map */
