@@ -37,6 +37,15 @@
     background: linear-gradient(122.51deg,$clr1,$clr2) !important;
 }
 
+@mixin sqaure {
+  content: "";
+      position: absolute;
+      left: 0;
+      width: 2.2rem;
+      height: 2.2rem;
+      background-color: rgba($color: $black-color, $alpha: 0.2);
+}
+
 @mixin border-img {
     border-image-slice:27 27 27 27;
     border-image-width:20px 20px 20px 20px;
